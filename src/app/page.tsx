@@ -1,4 +1,4 @@
-import { HackathonCard } from '@/components/hackathon-card';
+// import { HackathonCard } from '@/components/hackathon-card';
 import BlurFade from '@/components/magicui/blur-fade';
 import BlurFadeText from '@/components/magicui/blur-fade-text';
 import { ProjectCard } from '@/components/project-card';
@@ -7,6 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { DATA } from '@/data/resume';
+// import Image from 'next/image';
 import Link from 'next/link';
 import Markdown from 'react-markdown';
 
@@ -138,6 +139,35 @@ export default function Page() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* GITHUB */}
+      <section>
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <div className='space-y-12 w-full py-12'>
+            <div className='flex flex-col items-center justify-center space-y-4 text-center'>
+              <div className='space-y-2'>
+                <div className='inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm'>
+                  My GitHub Stats
+                </div>
+                <h2 className='text-3xl font-bold capitalize tracking-tighter sm:text-5xl'>
+                  Check out my github
+                </h2>
+              </div>
+            </div>
+
+            <div className='flex items-center w-full'>
+              <img
+                type='image/svg+xml'
+                src={`https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BagorK`}
+                alt='GitHub'
+                // width='100%'
+                className='w-full h-full'
+                // dangerouslyAllowSVG={true}
+              />
+            </div>
+          </div>
+        </BlurFade>
       </section>
 
       {/* CONTACT */}
