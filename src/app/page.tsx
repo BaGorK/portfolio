@@ -1,4 +1,5 @@
 // import { HackathonCard } from '@/components/hackathon-card';
+import GithubGraphImage from '@/components/github-graph-image';
 import BlurFade from '@/components/magicui/blur-fade';
 import BlurFadeText from '@/components/magicui/blur-fade-text';
 import { ProjectCard } from '@/components/project-card';
@@ -7,7 +8,6 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { DATA } from '@/data/resume';
-// import Image from 'next/image';
 import Link from 'next/link';
 import Markdown from 'react-markdown';
 
@@ -46,6 +46,10 @@ export default function Page() {
           </Link>
         </BlurFade>
       </section>
+
+      {/* github contribution graph  */}
+      <GithubGraphImage />
+
       {/* ABOUT */}
       <section id='about'>
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
@@ -154,17 +158,6 @@ export default function Page() {
                   Check out my github
                 </h2>
               </div>
-            </div>
-
-            <div className='flex items-center w-full'>
-              <img
-                type='image/svg+xml'
-                src={`https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=BagorK`}
-                alt='GitHub'
-                // width='100%'
-                className='w-full h-full'
-                // dangerouslyAllowSVG={true}
-              />
             </div>
           </div>
         </BlurFade>
