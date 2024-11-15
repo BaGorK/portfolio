@@ -12,7 +12,7 @@ export default function GithubGraphImage() {
   return (
     <section className=''>
       <BlurFade delay={0.04}>
-        <div className='w-full relative bg-red-500'>
+        <div className='w-full relative'>
           <Image
             src={theme === 'dark' ? githubDark : githubLight}
             alt=''
