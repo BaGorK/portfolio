@@ -101,11 +101,11 @@ export const DATA = {
           href: 'https://hotel-booking-app-intern.onrender.com',
           icon: <Icons.globe className='size-3' />,
         },
-        // {
-        //   type: 'GitHub',
-        //   href: 'https://chatcollect.com',
-        //   icon: <Icons.github className='size-3' />,
-        // },
+        {
+          type: 'GitHub',
+          href: 'https://github.com/BaGorK/Hotel-Booking-App',
+          icon: <Icons.github className='size-3' />,
+        },
       ],
       image: '',
       video: '/projects/hotelbookingapp/vid.mp4',
@@ -144,12 +144,12 @@ export const DATA = {
       video: '/projects/bookingappmern/vid.mp4',
     },
     {
-      title: 'the-wildoasis',
+      title: 'the-wild-oasis',
       href: 'https://youtu.be/b7LAIAYoFZQ',
       dates: 'Feb 29, 2024 - May 4, 2024',
       active: true,
       description:
-        'The wild oasis is an admin dashboard for an ideal hotel company that allows managers to create, update, and delete bookings, review checkin, checkout and unconfirmed bookings. On the dashboard the managers can see todays activities, summary of total sales, and also can perform checkin and checkout guests.',
+        'The Wild Oasis is an admin dashboard for an ideal hotel company that allows managers to create, update, and delete bookings, review checkin, checkout and unconfirmed bookings. On the dashboard the managers can see todays activities, summary of total sales, and also can perform checkin and checkout guests.',
       technologies: [
         'React.js',
         'JavaScript',
